@@ -33,9 +33,17 @@ console.log(reverseCharacters(test2));
 //d) Add the reversed string (or number) to the array defined in part ‘a’.
 //e) Return the final, reversed array.
 //f) Be sure to print the results from each test case in order to verify your code.
-
-
-
+function reverseArray(array) {
+  let tempArray = [];
+  for (let i = 0; i < array.length; i++) {
+    tempArray.unshift(reverseCharacters(array[i]));
+  }
+  return tempArray;
+}
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
+
+console.log(reverseArray(arrayTest1));
+console.log(reverseArray(arrayTest2));
+console.log(reverseArray(arrayTest3));
