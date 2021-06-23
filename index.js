@@ -22,7 +22,7 @@ function reverseCharacters(str) {
   }
 }
 let test1 = 123456789;
-let test2 = '123456789';
+let test2 = '987654321';
 console.log(reverseCharacters(test1));
 console.log(reverseCharacters(test2));
 
